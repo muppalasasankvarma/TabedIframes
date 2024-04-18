@@ -1,0 +1,746 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"  />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!-- Theme style -->
+  <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+
+  <style>
+    iframe{
+        width: 100vw;
+        height: 100vh;
+    }
+    .tab-content{
+        height: 100vh;
+    }
+    .content-wrapper.iframe-mode .btn-iframe-close {
+    color: #dc3545;
+    position: absolute;
+    line-height: 1;
+    right: .125rem;
+    top: .125rem;
+    z-index: 10;
+    visibility: hidden;
+}
+.content-wrapper.iframe-mode .navbar-nav .nav-item:focus .btn-iframe-close, .content-wrapper.iframe-mode .navbar-nav .nav-item:hover .btn-iframe-close {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    
+    visibility: visible;
+}
+.content-wrapper.iframe-mode .navbar-nav .nav-item {
+    position: relative;
+    background: #DDD;
+    margin-right: 5px;
+    border-radius: 25px 7px 0px 0px;
+}
+
+.content-wrapper.iframe-mode .tab-content {
+    position: relative;
+  }
+  .content-wrapper.iframe-mode .tab-pane + .tab-empty {
+    display: none;
+  }
+  .content-wrapper.iframe-mode .tab-empty {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .content-wrapper.iframe-mode .tab-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #f4f6f9;
+  }
+  .content-wrapper.iframe-mode .tab-loading > div {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  .content-wrapper.iframe-mode iframe {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    margin-bottom: -8px;
+  }
+  .content-wrapper.iframe-mode iframe .content-wrapper {
+    padding-bottom: 0 !important;
+  }
+  body.iframe-mode-fullscreen .content-wrapper.iframe-mode {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin-left: 0 !important;
+    height: 100%;
+    min-height: 100%;
+    z-index: 1048;
+  }
+  .permanent-btn-iframe-close .btn-iframe-close {
+    -webkit-animation: none !important;
+    animation: none !important;
+    visibility: visible !important;
+    opacity: 1;
+  }
+  .dark-mode .content-wrapper.iframe-mode .tab-loading {
+    background-color: #343a40;
+  }
+  .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(255 255 255 / 90%);
+    background: #3d3d3d;
+    border-radius:30px 7px 0px 0px;
+}
+.content-wrapper
+{
+    margin-top: 100px;
+}
+.bg-danger {
+    background-color: #080808 !important;
+    color: #fff;
+}
+  </style>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+  
+
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar  ">
+  
+    <!-- Sidebar Menu -->
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar" data-widget="treeview" role="menu" data-accordion="false">
+        <!-- Add icons to the links using the .nav-icon class
+             with font-awesome or any other icon font library -->
+             <li class="nav-item">
+              <a href="https://www.supportyourtech.com/tech/copying-text-from-an-image-on-windows-11-a-step-by-step-guide/" class="nav-link">
+             
+                <p>Dashboard v1</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href=https://open.spotify.com/album/1dpKR9xGrVPqN4l78ymrKD" class="nav-link">
+               
+                <p>Dashboard v2</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://workplace.zoho.in/#mail_app/mail/folder/inbox" class="nav-link">
+              
+                <p>Dashboard v3</p>
+              </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.supportyourtech.com/tech/copying-text-from-an-image-on-windows-11-a-step-by-step-guide3/" class="nav-link">
+               
+                  <p>Dashboard v4</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href=https://allthings.how/how-to-copy-text-from-an-image-using-snipping-tool-on-windows-112/" class="nav-link">
+                 
+                  <p>Dashboard v5</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="https://workplace.zoho.in/#mail_app/mail/folder/inbox2" class="nav-link">
+                
+                  <p>Dashboard v6</p>
+                </a>
+              </li>
+      
+      </ul>
+    </nav>
+    <!-- /.sidebar-menu -->
+  </div>
+  <!-- /.sidebar -->
+</aside>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper iframe-mode" data-widget="iframe" data-loading-screen="750">
+  <div class="nav navbar navbar-expand navbar-white navbar-light border-bottom p-0">
+    <div class="nav-item dropdown">
+      <a class="nav-link bg-danger dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Close</a>
+      <div class="dropdown-menu mt-0">
+        <a class="dropdown-item" href="#" data-widget="iframe-close" data-type="all">Close All</a>
+        <a class="dropdown-item" href="#" data-widget="iframe-close" data-type="all-other">Close All Other</a>
+      </div>
+    </div>
+    <a class="nav-link bg-light" href="#" data-widget="iframe-scrollleft"><i class="fas fa-angle-double-left"></i></a>
+    <ul class="navbar-nav  " role="tablist"></ul>
+    <a class="nav-link bg-light" href="#" data-widget="iframe-scrollright"><i class="fas fa-angle-double-right"></i></a>
+    <!-- <a class="nav-link bg-light" href="#" data-widget="iframe-fullscreen"><i class="fas fa-expand"></i></a> -->
+  </div>
+  <div class="tab-content">
+    <div class="tab-empty">
+      <h2 class="display-4">No tab selected!</h2>
+    </div>
+   
+  </div>
+</div>
+<!-- /.content-wrapper -->
+
+
+<!-- Control Sidebar -->
+
+<!-- /.control-sidebar -->
+</div>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"  ></script>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"  ></script>
+
+ 
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+ 
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+    <script>
+
+   
+ 
+        (function (global, factory) {
+          typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery')) :
+          typeof define === 'function' && define.amd ? define(['exports', 'jquery'], factory) :
+          (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global.adminlte = {}, global.jQuery));
+        })(this, (function (exports, $) { 'use strict';
+        
+          function _interopDefaultLegacy (e) { return e && typeof e === 'object' && 'default' in e ? e : { 'default': e }; }
+        
+          var $__default = /*#__PURE__*/_interopDefaultLegacy($);
+         
+          /**
+           * --------------------------------------------
+           Iframes
+         
+           * --------------------------------------------
+           */
+          /**
+           * Constants
+           * ====================================================
+           */
+        
+          var NAME$7 = 'IFrame';
+          var DATA_KEY$7 = 'lte.iframe';
+          var JQUERY_NO_CONFLICT$7 = $__default["default"].fn[NAME$7];
+          var SELECTOR_DATA_TOGGLE$1 = '[data-widget="iframe"]';
+          var SELECTOR_DATA_TOGGLE_CLOSE = '[data-widget="iframe-close"]';
+          var SELECTOR_DATA_TOGGLE_SCROLL_LEFT = '[data-widget="iframe-scrollleft"]';
+          var SELECTOR_DATA_TOGGLE_SCROLL_RIGHT = '[data-widget="iframe-scrollright"]';
+          var SELECTOR_DATA_TOGGLE_FULLSCREEN = '[data-widget="iframe-fullscreen"]';
+          var SELECTOR_CONTENT_WRAPPER = '.content-wrapper';
+          var SELECTOR_CONTENT_IFRAME = SELECTOR_CONTENT_WRAPPER + " iframe";
+          var SELECTOR_TAB_NAV = SELECTOR_CONTENT_WRAPPER + ".iframe-mode .nav";
+          var SELECTOR_TAB_NAVBAR_NAV = SELECTOR_CONTENT_WRAPPER + ".iframe-mode .navbar-nav";
+          var SELECTOR_TAB_NAVBAR_NAV_ITEM = SELECTOR_TAB_NAVBAR_NAV + " .nav-item";
+          var SELECTOR_TAB_NAVBAR_NAV_LINK = SELECTOR_TAB_NAVBAR_NAV + " .nav-link";
+          var SELECTOR_TAB_CONTENT = SELECTOR_CONTENT_WRAPPER + ".iframe-mode .tab-content";
+          var SELECTOR_TAB_EMPTY = SELECTOR_TAB_CONTENT + " .tab-empty";
+          var SELECTOR_TAB_LOADING = SELECTOR_TAB_CONTENT + " .tab-loading";
+          var SELECTOR_TAB_PANE = SELECTOR_TAB_CONTENT + " .tab-pane";
+          var SELECTOR_SIDEBAR_MENU_ITEM = '.main-sidebar .nav-item > a.nav-link';
+          var SELECTOR_SIDEBAR_SEARCH_ITEM = '.sidebar-search-results .list-group-item';
+          var SELECTOR_HEADER_MENU_ITEM = '.main-header .nav-item a.nav-link';
+          var SELECTOR_HEADER_DROPDOWN_ITEM = '.main-header a.dropdown-item';
+          var CLASS_NAME_IFRAME_MODE$1 = 'iframe-mode';
+          var CLASS_NAME_FULLSCREEN_MODE = 'iframe-mode-fullscreen';
+          var Default$7 = {
+            onTabClick: function onTabClick(item) {
+              return item;
+            },
+            onTabChanged: function onTabChanged(item) {
+              return item;
+            },
+            onTabCreated: function onTabCreated(item) {
+              return item;
+            },
+            autoIframeMode: true,
+            autoItemActive: true,
+            autoShowNewTab: true,
+            autoDarkMode: false,
+            allowDuplicates: false,
+            allowReload: true,
+            loadingScreen: true,
+            useNavbarItems: true,
+            scrollOffset: 40,
+            scrollBehaviorSwap: false,
+            iconMaximize: 'fa-expand',
+            iconMinimize: 'fa-compress'
+          };
+          /**
+           * Class Definition
+           * ====================================================
+           */
+        
+          var IFrame = /*#__PURE__*/function () {
+            function IFrame(element, config) {
+              this._config = config;
+              this._element = element;
+        
+              this._init();
+            } // Public
+        
+        
+            var _proto = IFrame.prototype;
+        
+            _proto.onTabClick = function onTabClick(item) {
+              this._config.onTabClick(item);
+            };
+        
+            _proto.onTabChanged = function onTabChanged(item) {
+              this._config.onTabChanged(item);
+            };
+        
+            _proto.onTabCreated = function onTabCreated(item) {
+              this._config.onTabCreated(item);
+            };
+        
+            _proto.createTab = function createTab(title, link, uniqueName, autoOpen) {
+              var _this = this;
+        
+              var tabId = "panel-" + uniqueName;
+              var navId = "tab-" + uniqueName;
+        
+              if (this._config.allowDuplicates) {
+                tabId += "-" + Math.floor(Math.random() * 1000);
+                navId += "-" + Math.floor(Math.random() * 1000);
+              }
+        
+              var newNavItem = "<li class=\"nav-item\" role=\"presentation\"><a href=\"#\" class=\"btn-iframe-close\" data-widget=\"iframe-close\" data-type=\"only-this\"><i class=\"fas fa-times\"></i></a><a class=\"nav-link\" data-toggle=\"row\" id=\"" + navId + "\" href=\"#" + tabId + "\" role=\"tab\" aria-controls=\"" + tabId + "\" aria-selected=\"false\">" + title + "</a></li>";
+              $__default["default"](SELECTOR_TAB_NAVBAR_NAV).append(unescape(escape(newNavItem)));
+              var newTabItem = "<div class=\"tab-pane fade\" id=\"" + tabId + "\" role=\"tabpanel\" aria-labelledby=\"" + navId + "\"><iframe src=\"" + link + "\"></iframe></div>";
+              $__default["default"](SELECTOR_TAB_CONTENT).append(unescape(escape(newTabItem)));
+        
+              if (autoOpen) {
+                if (this._config.loadingScreen) {
+                  var $loadingScreen = $__default["default"](SELECTOR_TAB_LOADING);
+                  $loadingScreen.fadeIn();
+                  $__default["default"](tabId + " iframe").ready(function () {
+                    if (typeof _this._config.loadingScreen === 'number') {
+                      _this.switchTab("#" + navId);
+        
+                      setTimeout(function () {
+                        $loadingScreen.fadeOut();
+                      }, _this._config.loadingScreen);
+                    } else {
+                      _this.switchTab("#" + navId);
+        
+                      $loadingScreen.fadeOut();
+                    }
+                  });
+                } else {
+                  this.switchTab("#" + navId);
+                }
+              }
+        
+              this.onTabCreated($__default["default"]("#" + navId));
+            };
+        
+            _proto.openTabSidebar = function openTabSidebar(item, autoOpen) {
+              if (autoOpen === void 0) {
+                autoOpen = this._config.autoShowNewTab;
+              }
+        
+              var $item = $__default["default"](item).clone();
+        
+              if ($item.attr('href') === undefined) {
+                $item = $__default["default"](item).parent('a').clone();
+              }
+        
+              $item.find('.right, .search-path').remove();
+              var title = $item.find('p').text();
+        
+              if (title === '') {
+                title = $item.text();
+              }
+        
+              var link = $item.attr('href');
+        
+              if (link === '#' || link === '' || link === undefined) {
+                return;
+              }
+        
+              var uniqueName = unescape(link).replace('./', '').replace(/["#&'./:=?[\]]/gi, '-').replace(/(--)/gi, '');
+              var navId = "tab-" + uniqueName;
+        
+              if (!this._config.allowDuplicates && $__default["default"]("#" + navId).length > 0) {
+                return this.switchTab("#" + navId, this._config.allowReload);
+              }
+        
+              if (!this._config.allowDuplicates && $__default["default"]("#" + navId).length === 0 || this._config.allowDuplicates) {
+                this.createTab(title, link, uniqueName, autoOpen);
+              }
+            };
+        
+            _proto.switchTab = function switchTab(item, reload) {
+              var _this2 = this;
+        
+              if (reload === void 0) {
+                reload = false;
+              }
+        
+              var $item = $__default["default"](item);
+              var tabId = $item.attr('href');
+              $__default["default"](SELECTOR_TAB_EMPTY).hide();
+        
+              if (reload) {
+                var $loadingScreen = $__default["default"](SELECTOR_TAB_LOADING);
+        
+                if (this._config.loadingScreen) {
+                  $loadingScreen.show(0, function () {
+                    $__default["default"](tabId + " iframe").attr('src', $__default["default"](tabId + " iframe").attr('src')).ready(function () {
+                      if (_this2._config.loadingScreen) {
+                        if (typeof _this2._config.loadingScreen === 'number') {
+                          setTimeout(function () {
+                            $loadingScreen.fadeOut();
+                          }, _this2._config.loadingScreen);
+                        } else {
+                          $loadingScreen.fadeOut();
+                        }
+                      }
+                    });
+                  });
+                } else {
+                  $__default["default"](tabId + " iframe").attr('src', $__default["default"](tabId + " iframe").attr('src'));
+                }
+              }
+        
+              $__default["default"](SELECTOR_TAB_NAVBAR_NAV + " .active").tab('dispose').removeClass('active');
+        
+              this._fixHeight();
+        
+              $item.tab('show');
+              $item.parents('li').addClass('active');
+              this.onTabChanged($item);
+        
+              if (this._config.autoItemActive) {
+                this._setItemActive($__default["default"](tabId + " iframe").attr('src'));
+              }
+            };
+        
+            _proto.removeActiveTab = function removeActiveTab(type, element) {
+              if (type == 'all') {
+                $__default["default"](SELECTOR_TAB_NAVBAR_NAV_ITEM).remove();
+                $__default["default"](SELECTOR_TAB_PANE).remove();
+                $__default["default"](SELECTOR_TAB_EMPTY).show();
+              } else if (type == 'all-other') {
+                $__default["default"](SELECTOR_TAB_NAVBAR_NAV_ITEM + ":not(.active)").remove();
+                $__default["default"](SELECTOR_TAB_PANE + ":not(.active)").remove();
+              } else if (type == 'only-this') {
+                var $navClose = $__default["default"](element);
+                var $navItem = $navClose.parent('.nav-item');
+                var $navItemParent = $navItem.parent();
+                var navItemIndex = $navItem.index();
+                var tabId = $navClose.siblings('.nav-link').attr('aria-controls');
+                $navItem.remove();
+                $__default["default"]("#" + tabId).remove();
+        
+                if ($__default["default"](SELECTOR_TAB_CONTENT).children().length == $__default["default"](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).length) {
+                  $__default["default"](SELECTOR_TAB_EMPTY).show();
+                } else {
+                  var prevNavItemIndex = navItemIndex - 1;
+                  this.switchTab($navItemParent.children().eq(prevNavItemIndex).find('a.nav-link'));
+                }
+              } else {
+                var _$navItem = $__default["default"](SELECTOR_TAB_NAVBAR_NAV_ITEM + ".active");
+        
+                var _$navItemParent = _$navItem.parent();
+        
+                var _navItemIndex = _$navItem.index();
+        
+                _$navItem.remove();
+        
+                $__default["default"](SELECTOR_TAB_PANE + ".active").remove();
+        
+                if ($__default["default"](SELECTOR_TAB_CONTENT).children().length == $__default["default"](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).length) {
+                  $__default["default"](SELECTOR_TAB_EMPTY).show();
+                } else {
+                  var _prevNavItemIndex = _navItemIndex - 1;
+        
+                  this.switchTab(_$navItemParent.children().eq(_prevNavItemIndex).find('a.nav-link'));
+                }
+              }
+            };
+        
+            _proto.toggleFullscreen = function toggleFullscreen() {
+              if ($__default["default"]('body').hasClass(CLASS_NAME_FULLSCREEN_MODE)) {
+                $__default["default"](SELECTOR_DATA_TOGGLE_FULLSCREEN + " i").removeClass(this._config.iconMinimize).addClass(this._config.iconMaximize);
+                $__default["default"]('body').removeClass(CLASS_NAME_FULLSCREEN_MODE);
+                $__default["default"](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).height('100%');
+                $__default["default"](SELECTOR_CONTENT_WRAPPER).height('100%');
+                $__default["default"](SELECTOR_CONTENT_IFRAME).height('100%');
+              } else {
+                $__default["default"](SELECTOR_DATA_TOGGLE_FULLSCREEN + " i").removeClass(this._config.iconMaximize).addClass(this._config.iconMinimize);
+                $__default["default"]('body').addClass(CLASS_NAME_FULLSCREEN_MODE);
+              }
+        
+              $__default["default"](window).trigger('resize');
+        
+              this._fixHeight(true);
+            } // Private
+            ;
+        
+            _proto._init = function _init() {
+              var usingDefTab = $__default["default"](SELECTOR_TAB_CONTENT).children().length > 2;
+        
+              this._setupListeners();
+        
+              this._fixHeight(true);
+        
+              if (usingDefTab) {
+                var $el = $__default["default"]("" + SELECTOR_TAB_PANE).first(); // eslint-disable-next-line no-console
+        
+                console.log($el);
+                var uniqueName = $el.attr('id').replace('panel-', '');
+                var navId = "#tab-" + uniqueName;
+                this.switchTab(navId, true);
+              }
+            };
+        
+            _proto._initFrameElement = function _initFrameElement() {
+              if (window.frameElement && this._config.autoIframeMode) {
+                var $body = $__default["default"]('body');
+                $body.addClass(CLASS_NAME_IFRAME_MODE$1);
+        
+                if (this._config.autoDarkMode) {
+                  $body.addClass('dark-mode');
+                }
+              }
+            };
+        
+            _proto._navScroll = function _navScroll(offset) {
+              var leftPos = $__default["default"](SELECTOR_TAB_NAVBAR_NAV).scrollLeft();
+              $__default["default"](SELECTOR_TAB_NAVBAR_NAV).animate({
+                scrollLeft: leftPos + offset
+              }, 250, 'linear');
+            };
+        
+            _proto._setupListeners = function _setupListeners() {
+              var _this3 = this;
+        
+              $__default["default"](window).on('resize', function () {
+                setTimeout(function () {
+                  _this3._fixHeight();
+                }, 1);
+              });
+        
+              if ($__default["default"](SELECTOR_CONTENT_WRAPPER).hasClass(CLASS_NAME_IFRAME_MODE$1)) {
+                $__default["default"](document).on('click', SELECTOR_SIDEBAR_MENU_ITEM + ", " + SELECTOR_SIDEBAR_SEARCH_ITEM, function (e) {
+                  e.preventDefault();
+        
+                  _this3.openTabSidebar(e.target);
+                });
+        
+                if (this._config.useNavbarItems) {
+                  $__default["default"](document).on('click', SELECTOR_HEADER_MENU_ITEM + ", " + SELECTOR_HEADER_DROPDOWN_ITEM, function (e) {
+                    e.preventDefault();
+        
+                    _this3.openTabSidebar(e.target);
+                  });
+                }
+              }
+        
+              $__default["default"](document).on('click', SELECTOR_TAB_NAVBAR_NAV_LINK, function (e) {
+                e.preventDefault();
+        
+                _this3.onTabClick(e.target);
+        
+                _this3.switchTab(e.target);
+              });
+              $__default["default"](document).on('click', SELECTOR_TAB_NAVBAR_NAV_LINK, function (e) {
+                e.preventDefault();
+        
+                _this3.onTabClick(e.target);
+        
+                _this3.switchTab(e.target);
+              });
+              $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE_CLOSE, function (e) {
+                e.preventDefault();
+                var target = e.target;
+        
+                if (target.nodeName == 'I') {
+                  target = e.target.offsetParent;
+                }
+        
+                _this3.removeActiveTab(target.attributes['data-type'] ? target.attributes['data-type'].nodeValue : null, target);
+              });
+              $__default["default"](document).on('click', SELECTOR_DATA_TOGGLE_FULLSCREEN, function (e) {
+                e.preventDefault();
+        
+                _this3.toggleFullscreen();
+              });
+              var mousedown = false;
+              var mousedownInterval = null;
+              $__default["default"](document).on('mousedown', SELECTOR_DATA_TOGGLE_SCROLL_LEFT, function (e) {
+                e.preventDefault();
+                clearInterval(mousedownInterval);
+                var scrollOffset = _this3._config.scrollOffset;
+        
+                if (!_this3._config.scrollBehaviorSwap) {
+                  scrollOffset = -scrollOffset;
+                }
+        
+                mousedown = true;
+        
+                _this3._navScroll(scrollOffset);
+        
+                mousedownInterval = setInterval(function () {
+                  _this3._navScroll(scrollOffset);
+                }, 250);
+              });
+              $__default["default"](document).on('mousedown', SELECTOR_DATA_TOGGLE_SCROLL_RIGHT, function (e) {
+                e.preventDefault();
+                clearInterval(mousedownInterval);
+                var scrollOffset = _this3._config.scrollOffset;
+        
+                if (_this3._config.scrollBehaviorSwap) {
+                  scrollOffset = -scrollOffset;
+                }
+        
+                mousedown = true;
+        
+                _this3._navScroll(scrollOffset);
+        
+                mousedownInterval = setInterval(function () {
+                  _this3._navScroll(scrollOffset);
+                }, 250);
+              });
+              $__default["default"](document).on('mouseup', function () {
+                if (mousedown) {
+                  mousedown = false;
+                  clearInterval(mousedownInterval);
+                  mousedownInterval = null;
+                }
+              });
+            };
+        
+            _proto._setItemActive = function _setItemActive(href) {
+              $__default["default"](SELECTOR_SIDEBAR_MENU_ITEM + ", " + SELECTOR_HEADER_DROPDOWN_ITEM).removeClass('active');
+              $__default["default"](SELECTOR_HEADER_MENU_ITEM).parent().removeClass('active');
+              var $headerMenuItem = $__default["default"](SELECTOR_HEADER_MENU_ITEM + "[href$=\"" + href + "\"]");
+              var $headerDropdownItem = $__default["default"](SELECTOR_HEADER_DROPDOWN_ITEM + "[href$=\"" + href + "\"]");
+              var $sidebarMenuItem = $__default["default"](SELECTOR_SIDEBAR_MENU_ITEM + "[href$=\"" + href + "\"]");
+              $headerMenuItem.each(function (i, e) {
+                $__default["default"](e).parent().addClass('active');
+              });
+              $headerDropdownItem.each(function (i, e) {
+                $__default["default"](e).addClass('active');
+              });
+              $sidebarMenuItem.each(function (i, e) {
+                $__default["default"](e).addClass('active');
+                $__default["default"](e).parents('.nav-treeview').prevAll('.nav-link').addClass('active');
+              });
+            };
+        
+            _proto._fixHeight = function _fixHeight(tabEmpty) {
+              if (tabEmpty === void 0) {
+                tabEmpty = false;
+              }
+        
+              if ($__default["default"]('body').hasClass(CLASS_NAME_FULLSCREEN_MODE)) {
+                var windowHeight = $__default["default"](window).height();
+                var navbarHeight = $__default["default"](SELECTOR_TAB_NAV).outerHeight();
+                $__default["default"](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING + ", " + SELECTOR_CONTENT_IFRAME).height(windowHeight - navbarHeight);
+                $__default["default"](SELECTOR_CONTENT_WRAPPER).height(windowHeight);
+              } else {
+                var contentWrapperHeight = parseFloat($__default["default"](SELECTOR_CONTENT_WRAPPER).css('height'));
+        
+                var _navbarHeight = $__default["default"](SELECTOR_TAB_NAV).outerHeight();
+        
+                if (tabEmpty == true) {
+                  setTimeout(function () {
+                    $__default["default"](SELECTOR_TAB_EMPTY + ", " + SELECTOR_TAB_LOADING).height(contentWrapperHeight - _navbarHeight);
+                  }, 50);
+                } else {
+                  $__default["default"](SELECTOR_CONTENT_IFRAME).height(contentWrapperHeight - _navbarHeight);
+                }
+              }
+            } // Static
+            ;
+        
+            IFrame._jQueryInterface = function _jQueryInterface(config) {
+              if ($__default["default"](SELECTOR_DATA_TOGGLE$1).length > 0) {
+                var data = $__default["default"](this).data(DATA_KEY$7);
+        
+                if (!data) {
+                  data = $__default["default"](this).data();
+                }
+        
+                var _options = $__default["default"].extend({}, Default$7, typeof config === 'object' ? config : data);
+        
+                localStorage.setItem('AdminLTE:IFrame:Options', JSON.stringify(_options));
+                var plugin = new IFrame($__default["default"](this), _options);
+                $__default["default"](this).data(DATA_KEY$7, typeof config === 'object' ? config : data);
+        
+                if (typeof config === 'string' && /createTab|openTabSidebar|switchTab|removeActiveTab/.test(config)) {
+                  plugin[config]();
+                }
+              } else {
+                new IFrame($__default["default"](this), JSON.parse(localStorage.getItem('AdminLTE:IFrame:Options')))._initFrameElement();
+              }
+            };
+        
+            return IFrame;
+          }();
+          /**
+           * Data API
+           * ====================================================
+           */
+        
+        
+          $__default["default"](window).on('load', function () {
+            IFrame._jQueryInterface.call($__default["default"](SELECTOR_DATA_TOGGLE$1));
+          });
+          /**
+           * jQuery API
+           * ====================================================
+           */
+        
+          $__default["default"].fn[NAME$7] = IFrame._jQueryInterface;
+          $__default["default"].fn[NAME$7].Constructor = IFrame;
+        
+          $__default["default"].fn[NAME$7].noConflict = function () {
+            $__default["default"].fn[NAME$7] = JQUERY_NO_CONFLICT$7;
+            return IFrame._jQueryInterface;
+          };
+         
+        }));
+         
+        
+         </script>
+
+  </body>
+</html>
